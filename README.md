@@ -35,8 +35,7 @@ To run your validator, you will need a private key. It's recommended to use a de
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/0xHawre/-Elixir-Testnet-Validator.git
-   cd -Elixir-Testnet-Validator
+   git clone https://github.com/0xHawre/Elixir-Testnet-Validator.git &&  cd Elixir-Testnet-Validator && chmod +x script.sh && chmod +x update.sh 
    ```
 
 2. **Run the Setup Script:**
@@ -44,7 +43,7 @@ To run your validator, you will need a private key. It's recommended to use a de
    Execute the script to check for Docker, install it if necessary, and configure the validator:
 
    ```bash
-   bash bash.sh
+   ./script.sh
    ```
 
    The script will prompt you for the following information:
@@ -57,6 +56,11 @@ To run your validator, you will need a private key. It's recommended to use a de
 
 ### Upgrading your validator
 As the Elixir team continues to improve the validator during the lead up to Mainnet launch, you may need to pull the latest version of the validator.  To do so, open a command line in the directory with your Dockerfile and execute the following commands:
+
+### update by scipt 
+```bash 
+./update.sh
+```
 
 ```bash
 docker kill elixir
